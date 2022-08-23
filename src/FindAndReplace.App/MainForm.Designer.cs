@@ -136,7 +136,7 @@ namespace FindAndReplace.App
             this.btnSwap.AccessibleDescription = "";
             this.btnSwap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSwap.CausesValidation = false;
-            this.btnSwap.Location = new System.Drawing.Point(561, 107);
+            this.btnSwap.Location = new System.Drawing.Point(561, 96);
             this.btnSwap.Name = "btnSwap";
             this.btnSwap.Padding = new System.Windows.Forms.Padding(3, 0, 0, 3);
             this.btnSwap.Size = new System.Drawing.Size(34, 34);
@@ -368,9 +368,9 @@ namespace FindAndReplace.App
             // 
             this.btnReplace.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReplace.Location = new System.Drawing.Point(391, 3);
+            this.btnReplace.Location = new System.Drawing.Point(377, 3);
             this.btnReplace.Name = "btnReplace";
-            this.btnReplace.Size = new System.Drawing.Size(75, 25);
+            this.btnReplace.Size = new System.Drawing.Size(85, 25);
             this.btnReplace.TabIndex = 0;
             this.btnReplace.Text = "Replace";
             this.btnReplace.UseVisualStyleBackColor = true;
@@ -380,11 +380,11 @@ namespace FindAndReplace.App
             // 
             this.btnGenReplaceCommandLine.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGenReplaceCommandLine.Location = new System.Drawing.Point(292, 30);
+            this.btnGenReplaceCommandLine.Location = new System.Drawing.Point(237, 30);
             this.btnGenReplaceCommandLine.Name = "btnGenReplaceCommandLine";
-            this.btnGenReplaceCommandLine.Size = new System.Drawing.Size(174, 25);
+            this.btnGenReplaceCommandLine.Size = new System.Drawing.Size(225, 25);
             this.btnGenReplaceCommandLine.TabIndex = 1;
-            this.btnGenReplaceCommandLine.Text = "Gen Replace Command Line";
+            this.btnGenReplaceCommandLine.Text = "Generate Replace Command Line";
             this.btnGenReplaceCommandLine.UseVisualStyleBackColor = true;
             this.btnGenReplaceCommandLine.Click += new System.EventHandler(this.btnGenReplaceCommandLine_Click);
             // 
@@ -402,19 +402,18 @@ namespace FindAndReplace.App
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.btnFindOnly);
-            this.panel8.Location = new System.Drawing.Point(455, 65);
+            this.panel8.Location = new System.Drawing.Point(455, 63);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(94, 88);
+            this.panel8.Size = new System.Drawing.Size(94, 99);
             this.panel8.TabIndex = 8;
             // 
             // btnFindOnly
             // 
             this.btnFindOnly.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFindOnly.Location = new System.Drawing.Point(23, 3);
-            this.btnFindOnly.MaximumSize = new System.Drawing.Size(71, 29);
+            this.btnFindOnly.Location = new System.Drawing.Point(3, 3);
             this.btnFindOnly.Name = "btnFindOnly";
-            this.btnFindOnly.Size = new System.Drawing.Size(71, 25);
+            this.btnFindOnly.Size = new System.Drawing.Size(85, 25);
             this.btnFindOnly.TabIndex = 0;
             this.btnFindOnly.Text = "Find Only";
             this.btnFindOnly.UseVisualStyleBackColor = true;
@@ -678,7 +677,7 @@ namespace FindAndReplace.App
             this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(83, 88);
+            this.lblStatus.Location = new System.Drawing.Point(83, 86);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(16, 15);
             this.lblStatus.TabIndex = 21;
