@@ -33,7 +33,7 @@ namespace FindAndReplace.App
         {
             InitializeComponent();
 
-            if (!string.IsNullOrEmpty(path))
+            if (!string.IsNullOrWhiteSpace(path))
             {
                 txtDir.Text = path;
                 vistaFolderBrowserDialog1.SelectedPath = path;
@@ -915,7 +915,9 @@ namespace FindAndReplace.App
                 return;
             }
 
-            txtDir.Text = data.Dir;
+            if (string.IsNullOrEmpty(txtDir.Text))
+                txtDir.Text = data.Dir;
+
             chkIncludeSubDirectories.Checked = data.IncludeSubDirectories;
             txtFileMask.Text = data.FileMask;
             txtExcludeFileMask.Text = data.ExcludeFileMask;
