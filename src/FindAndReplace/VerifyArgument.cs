@@ -8,14 +8,14 @@ namespace FindAndReplace
     /// From http://kigg.codeplex.com/SourceControl/changeset/view/18277#346723
     /// </summary>
 	[Serializable]
-	public class Verify
+    public class Verify
     {
         internal Verify()
         {
         }
 
-		[Serializable]
-		public class Argument
+        [Serializable]
+        public class Argument
         {
             internal Argument()
             {
@@ -43,12 +43,12 @@ namespace FindAndReplace
             }
 
 
-			[DebuggerStepThrough]
-			public static void IsNull(object argument, string argumentName)
-			{
-				if (argument != null)
-					throw new ArgumentException(argumentName + " must be null", argumentName);
-			}
+            [DebuggerStepThrough]
+            public static void IsNull(object argument, string argumentName)
+            {
+                if (argument != null)
+                    throw new ArgumentException(argumentName + " must be null", argumentName);
+            }
 
 
             [DebuggerStepThrough]
@@ -171,27 +171,27 @@ namespace FindAndReplace
                     throw new ArgumentOutOfRangeException(argumentName, argumentName + "must be between " + min + "-" + max + ".");
             }
 
-			public static void AreEqual<T>(T expected, T actual, string argumentName) 
+            public static void AreEqual<T>(T expected, T actual, string argumentName)
             {
                 if (!EqualityComparer<T>.Default.Equals(expected, actual))
                     throw new ArgumentOutOfRangeException(argumentName, argumentName + " must be " + expected + ", but was " + actual + ".");
             }
 
-			public static void IsTrue(bool actual, string argumentName)
-			{
-				AreEqual(true, actual, argumentName);
-			}
+            public static void IsTrue(bool actual, string argumentName)
+            {
+                AreEqual(true, actual, argumentName);
+            }
 
-			public static void IsFalse(bool actual, string argumentName)
-			{
-				AreEqual(false, actual, argumentName);
-			}
+            public static void IsFalse(bool actual, string argumentName)
+            {
+                AreEqual(false, actual, argumentName);
+            }
 
-			public static void AreNotEqual<T>(T expected, T actual, string argumentName)
-			{
-				if (EqualityComparer<T>.Default.Equals(expected, actual))
-					throw new ArgumentOutOfRangeException(argumentName, argumentName + " must not be equal to " + expected + ".");
-			}
+            public static void AreNotEqual<T>(T expected, T actual, string argumentName)
+            {
+                if (EqualityComparer<T>.Default.Equals(expected, actual))
+                    throw new ArgumentOutOfRangeException(argumentName, argumentName + " must not be equal to " + expected + ".");
+            }
 
             /*
            [DebuggerStepThrough]

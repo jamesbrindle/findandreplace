@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MultiLanguage
 {
@@ -12,10 +10,10 @@ namespace MultiLanguage
 
         // Not currently supported.
         MLDETECTF_BROWSER = 0x0002,
-        
+
         // Detection result must be valid for conversion and text rendering.
         MLDETECTF_VALID = 0x0004,
-        
+
         // Detection result must be valid for conversion.
         MLDETECTF_VALID_NLS = 0x0008,
 
@@ -29,9 +27,9 @@ namespace MultiLanguage
 
         // Filter out graphical symbols and punctuation.
         MLDETECTF_FILTER_SPECIALCHAR = 0x0040,
-        
+
         // Return only Unicode codepages if the euro character is detected. 
         MLDETECTF_EURO_UTF8 = 0x0080
-    }    
+    }
 
 }

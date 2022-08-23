@@ -1,79 +1,76 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace FindAndReplace
 {
-	public enum Status
-	{
-		Processing,
-		Completed,
-		Cancelled
-	}
-	
-	public class Stats
-	{
-		public class StatsFiles
-		{
-			public int Total { get; set; }
+    public enum Status
+    {
+        Processing,
+        Completed,
+        Cancelled
+    }
 
-			public int Processed { get; set; }
+    public class Stats
+    {
+        public class StatsFiles
+        {
+            public int Total { get; set; }
 
-			public int Binary { get; set; }
+            public int Processed { get; set; }
 
-			public int WithMatches { get; set; }
+            public int Binary { get; set; }
 
-			public int WithoutMatches { get; set; }
+            public int WithMatches { get; set; }
 
-			public int FailedToRead { get; set; }
+            public int WithoutMatches { get; set; }
 
-			public int FailedToWrite { get; set; }
-		}
+            public int FailedToRead { get; set; }
 
-		public class StatsMatches
-		{
-			public int Found { get; set; }
+            public int FailedToWrite { get; set; }
+        }
 
-			public int Replaced { get; set; }
-		}
+        public class StatsMatches
+        {
+            public int Found { get; set; }
 
-		public class StatsTime
-		{
-			public TimeSpan Passed { get; set; }
+            public int Replaced { get; set; }
+        }
 
-			public TimeSpan Remaining { get; set; }
-		}
+        public class StatsTime
+        {
+            public TimeSpan Passed { get; set; }
 
-		public StatsFiles Files { get; set; }
+            public TimeSpan Remaining { get; set; }
+        }
 
-		public StatsMatches Matches { get; set; }
+        public StatsFiles Files { get; set; }
 
-		public StatsTime Time { get; set; }
+        public StatsMatches Matches { get; set; }
 
-		public Stats()
-		{
-			Files = new StatsFiles();
+        public StatsTime Time { get; set; }
 
-			Matches = new StatsMatches();
+        public Stats()
+        {
+            Files = new StatsFiles();
 
-			Time = new StatsTime();
-		}
+            Matches = new StatsMatches();
 
-		public void UpdateTime(DateTime startTime, DateTime startTimeProcessingFiles)
-		{
-			DateTime now = DateTime.Now;
-			Time.Passed = now.Subtract(startTime);
-			
-			//Use startTimeProcessingFiles to figure out remaining time
-			TimeSpan passedProcessingFiles = now.Subtract(startTimeProcessingFiles);
+            Time = new StatsTime();
+        }
 
-			double passedSeconds = passedProcessingFiles.TotalSeconds;
+        public void UpdateTime(DateTime startTime, DateTime startTimeProcessingFiles)
+        {
+            DateTime now = DateTime.Now;
+            Time.Passed = now.Subtract(startTime);
 
-			int remainingFiles = Files.Total - Files.Processed;
-			var remainingSeconds = (passedSeconds / Files.Processed) * remainingFiles;
+            //Use startTimeProcessingFiles to figure out remaining time
+            TimeSpan passedProcessingFiles = now.Subtract(startTimeProcessingFiles);
 
-			Time.Remaining = TimeSpan.FromSeconds(remainingSeconds);
-		}
-	}
+            double passedSeconds = passedProcessingFiles.TotalSeconds;
+
+            int remainingFiles = Files.Total - Files.Processed;
+            var remainingSeconds = (passedSeconds / Files.Processed) * remainingFiles;
+
+            Time.Remaining = TimeSpan.FromSeconds(remainingSeconds);
+        }
+    }
 }

@@ -1,8 +1,5 @@
 namespace MultiLanguage
 {
-    using System;
-    using System.Security;
-
     public enum tagMIMECONTF
     {
         MIMECONTF_BROWSER = 2,

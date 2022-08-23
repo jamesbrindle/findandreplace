@@ -1,10 +1,9 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
 
 namespace FindAndReplace.Tests
 {
@@ -42,7 +41,7 @@ namespace FindAndReplace.Tests
             CreateTestFile(fileContent, Encoding.UTF7);
             CreateTestFile(fileContent, Encoding.UTF8);
 
-        } 
+        }
 
         private void CreateTestFile(string fileContent, Encoding encoding)
         {
@@ -53,7 +52,7 @@ namespace FindAndReplace.Tests
 
         protected void CreateTestDir()
         {
-           
+
             _tempDir = Path.GetTempPath() + "FindAndReplaceTests";
             Directory.CreateDirectory(_tempDir);
         }
@@ -75,17 +74,17 @@ namespace FindAndReplace.Tests
                 throw new InvalidOperationException("Dir '" + _speedDir + "' already exists.");
 
             Directory.CreateDirectory(_speedDir);
-        }  
+        }
 
         [Test]
         public void RunAsync_UsingBlockingCollection_TryTake_Works()
         {
             var fileGetter = new FileGetter
-                {
-                    DirPath = _tempDir,
-                    FileMasks = new List<string>{"*.*"},
-                    SearchOption = SearchOption.AllDirectories
-                };
+            {
+                DirPath = _tempDir,
+                FileMasks = new List<string> { "*.*" },
+                SearchOption = SearchOption.AllDirectories
+            };
 
             fileGetter.RunAsync();
 
@@ -213,7 +212,7 @@ namespace FindAndReplace.Tests
             //CompareGetFilesSpeed("*.txt");
         }
 
-        private  string _getFilesSpeedDir = Path.GetTempPath() + "\\FindAndReplaceTests";//"C:\\Temp\\FindAndReplaceTest\\Stable";
+        private string _getFilesSpeedDir = Path.GetTempPath() + "\\FindAndReplaceTests";//"C:\\Temp\\FindAndReplaceTest\\Stable";
         //private const string _getFilesSpeedDir = "C:\\Code\\SpaBooker\\9_4";
 
 

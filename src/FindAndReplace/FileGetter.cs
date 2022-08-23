@@ -3,7 +3,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -20,7 +19,7 @@ namespace FindAndReplace
 
         public SearchOption SearchOption { get; set; }
 
-		public bool IsCancelRequested { get; set; }
+        public bool IsCancelRequested { get; set; }
         public bool IsCancelled { get; set; }
 
         public Task _task;
@@ -53,26 +52,26 @@ namespace FindAndReplace
             _fileCount = 0;
 
             StopWatch.Start("FileGetter.Run");
-                   
+
             foreach (var fileMask in FileMasks)
             {
                 StopWatch.Start("FileGetter.Run Directory.EnumerateFiles");
-                          
+
                 var files = Directory.EnumerateFiles(DirPath, fileMask, SearchOption);
 
                 StopWatch.Stop("FileGetter.Run Directory.EnumerateFiles");
-                
+
                 foreach (string filePath in files)
                 {
 
                     StopWatch.Start("FileGetter.Run IsMatchWithExcludeFileMasks");
                     bool isMatchWithExcludeFileMasks = IsMatchWithExcludeFileMasks(filePath);
                     StopWatch.Stop("FileGetter.Run IsMatchWithExcludeFileMasks");
-           
+
                     if (!isMatchWithExcludeFileMasks)
                     {
-	                    _fileCount++;
-                       
+                        _fileCount++;
+
                         if (UseBlockingCollection)
                         {
                             //StopWatch.Start("FileGetter.FileCollection.Add");
@@ -87,17 +86,17 @@ namespace FindAndReplace
                         }
                     }
 
-  
-	                if (IsCancelRequested)
-	                     break;
+
+                    if (IsCancelRequested)
+                        break;
                 }
 
-               if (IsCancelRequested)
-					break;
-			}
+                if (IsCancelRequested)
+                    break;
+            }
 
 
-            
+
             if (IsCancelRequested)
                 IsCancelled = true;
             else
@@ -109,22 +108,22 @@ namespace FindAndReplace
             StopWatch.Stop("FileGetter.Run");
 
             StopWatch.PrintCollection(StopWatch.Collection["FileGetter.Run"].Milliseconds);
-       }
+        }
 
 
         public List<string> RunSync()
         {
 
             //StopWatch.Start("RunSync RunAsync");
-           
+
             RunAsync();
 
             //StopWatch.Stop("RunSync RunAsync");
-           
+
             var filePathes = new List<string>();
 
             //StopWatch.Start("RunSync While loop");
-                       
+
             while (true)
             {
                 string filePath;
@@ -132,10 +131,10 @@ namespace FindAndReplace
                 if (UseBlockingCollection)
                 {
                     //StopWatch.Start("FileGetter.RunSync FileCollection.Take");
-                       
+
                     try
                     {
-                       
+
                         filePath = FileCollection.Take();
                     }
                     catch (InvalidOperationException)
@@ -155,7 +154,7 @@ namespace FindAndReplace
                     bool isDequeued = false;
 
                     //StopWatch.Start("FileGetter.RunSync FileQueue.TryDequeue");
-                   
+
                     if (FileQueue.TryDequeue(out filePath))
                     {
                         filePathes.Add(filePath);
@@ -163,7 +162,7 @@ namespace FindAndReplace
                     }
 
                     //StopWatch.Stop("FileGetter.RunSync FileQueue.TryDequeue");
-                   
+
 
                     if (FileQueue.IsEmpty && IsFileCountFinal)
                         break;
@@ -180,7 +179,7 @@ namespace FindAndReplace
             }
 
             //StopWatch.Stop("RunSync While loop");
-           
+
             return filePathes;
         }
 
