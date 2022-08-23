@@ -4,4 +4,4 @@ REM makes fnr2.exe that includes fnr.exe and both assemblies. Can be renamed to 
 set RELEASE_DIR=D:\Repositories\FindAndReplace\src\FindAndReplace.App\bin\Release
 
 cd %RELEASE_DIR%
-"C:\Program Files (x86)\Microsoft\ILMerge\ilmerge.exe" /log:log.txt /targetplatform:4 /out:fnr2.exe fnr.exe FindAndReplace.dll CommandLine.dll EncodingTools.dll
+"C:\Program Files (x86)\Microsoft\ILMerge\ilmerge.exe" /log:log.txt /targetplatform:4 /out:fnr2.exe fnr.exe FindAndReplace.dll CommandLine.dll EncodingTools.dll Ookii.Dialogs.WinForms.dll
