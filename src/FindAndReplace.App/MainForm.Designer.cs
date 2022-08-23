@@ -136,10 +136,10 @@ namespace FindAndReplace.App
             this.btnSwap.AccessibleDescription = "";
             this.btnSwap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSwap.CausesValidation = false;
-            this.btnSwap.Location = new System.Drawing.Point(561, 101);
+            this.btnSwap.Location = new System.Drawing.Point(561, 107);
             this.btnSwap.Name = "btnSwap";
-            this.btnSwap.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.btnSwap.Size = new System.Drawing.Size(33, 40);
+            this.btnSwap.Padding = new System.Windows.Forms.Padding(3, 0, 0, 3);
+            this.btnSwap.Size = new System.Drawing.Size(34, 34);
             this.btnSwap.TabIndex = 1;
             this.btnSwap.Text = "↑ ↓";
             this.toolTip_btnSwap.SetToolTip(this.btnSwap, "Swap find text and replace text");
@@ -149,9 +149,9 @@ namespace FindAndReplace.App
             // chkIncludeFilesWithoutMatches
             // 
             this.chkIncludeFilesWithoutMatches.AutoSize = true;
-            this.chkIncludeFilesWithoutMatches.Location = new System.Drawing.Point(109, 49);
+            this.chkIncludeFilesWithoutMatches.Location = new System.Drawing.Point(123, 53);
             this.chkIncludeFilesWithoutMatches.Name = "chkIncludeFilesWithoutMatches";
-            this.chkIncludeFilesWithoutMatches.Size = new System.Drawing.Size(162, 17);
+            this.chkIncludeFilesWithoutMatches.Size = new System.Drawing.Size(186, 19);
             this.chkIncludeFilesWithoutMatches.TabIndex = 5;
             this.chkIncludeFilesWithoutMatches.Text = "Include files without matches";
             this.toolTip_chkIncludeFilesWithoutMatches.SetToolTip(this.chkIncludeFilesWithoutMatches, "Show files without matches in results.");
@@ -160,9 +160,9 @@ namespace FindAndReplace.App
             // chkSkipBinaryFileDetection
             // 
             this.chkSkipBinaryFileDetection.AutoSize = true;
-            this.chkSkipBinaryFileDetection.Location = new System.Drawing.Point(3, 26);
+            this.chkSkipBinaryFileDetection.Location = new System.Drawing.Point(3, 28);
             this.chkSkipBinaryFileDetection.Name = "chkSkipBinaryFileDetection";
-            this.chkSkipBinaryFileDetection.Size = new System.Drawing.Size(141, 17);
+            this.chkSkipBinaryFileDetection.Size = new System.Drawing.Size(161, 19);
             this.chkSkipBinaryFileDetection.TabIndex = 2;
             this.chkSkipBinaryFileDetection.Text = "Skip binary file detection";
             this.toolTip_chkSkipBinaryFileDetection.SetToolTip(this.chkSkipBinaryFileDetection, "Include binary files when searching for the string in \'Find\'.");
@@ -171,9 +171,9 @@ namespace FindAndReplace.App
             // chkShowEncoding
             // 
             this.chkShowEncoding.AutoSize = true;
-            this.chkShowEncoding.Location = new System.Drawing.Point(3, 49);
+            this.chkShowEncoding.Location = new System.Drawing.Point(3, 53);
             this.chkShowEncoding.Name = "chkShowEncoding";
-            this.chkShowEncoding.Size = new System.Drawing.Size(100, 17);
+            this.chkShowEncoding.Size = new System.Drawing.Size(114, 19);
             this.chkShowEncoding.TabIndex = 4;
             this.chkShowEncoding.Text = "Show encoding";
             this.toolTip_chkShowEncoding.SetToolTip(this.chkShowEncoding, "Indicate encoding detected for each file");
@@ -229,7 +229,7 @@ namespace FindAndReplace.App
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(11, 17);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(58, 15);
             this.label4.TabIndex = 2;
             this.label4.Text = "Directory:";
             // 
@@ -252,7 +252,7 @@ namespace FindAndReplace.App
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(327, 51);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 36;
             this.label6.Text = "Exclude Dir:";
             // 
@@ -266,7 +266,7 @@ namespace FindAndReplace.App
             this.chkIncludeSubDirectories.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkIncludeSubDirectories.Location = new System.Drawing.Point(82, 50);
             this.chkIncludeSubDirectories.Name = "chkIncludeSubDirectories";
-            this.chkIncludeSubDirectories.Size = new System.Drawing.Size(132, 17);
+            this.chkIncludeSubDirectories.Size = new System.Drawing.Size(153, 19);
             this.chkIncludeSubDirectories.TabIndex = 1;
             this.chkIncludeSubDirectories.Text = "Include sub-directories";
             this.chkIncludeSubDirectories.UseVisualStyleBackColor = true;
@@ -275,7 +275,7 @@ namespace FindAndReplace.App
             // lblStats
             // 
             this.lblStats.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStats.Location = new System.Drawing.Point(639, 122);
             this.lblStats.Name = "lblStats";
             this.lblStats.Size = new System.Drawing.Size(237, 273);
@@ -393,7 +393,7 @@ namespace FindAndReplace.App
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 165);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(56, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Replace:";
             // 
@@ -414,7 +414,7 @@ namespace FindAndReplace.App
             this.btnFindOnly.Location = new System.Drawing.Point(23, 3);
             this.btnFindOnly.MaximumSize = new System.Drawing.Size(71, 29);
             this.btnFindOnly.Name = "btnFindOnly";
-            this.btnFindOnly.Size = new System.Drawing.Size(71, 29);
+            this.btnFindOnly.Size = new System.Drawing.Size(71, 25);
             this.btnFindOnly.TabIndex = 0;
             this.btnFindOnly.Text = "Find Only";
             this.btnFindOnly.UseVisualStyleBackColor = true;
@@ -443,7 +443,7 @@ namespace FindAndReplace.App
             this.chkIsCaseSensitive.AutoSize = true;
             this.chkIsCaseSensitive.Location = new System.Drawing.Point(3, 3);
             this.chkIsCaseSensitive.Name = "chkIsCaseSensitive";
-            this.chkIsCaseSensitive.Size = new System.Drawing.Size(94, 17);
+            this.chkIsCaseSensitive.Size = new System.Drawing.Size(107, 19);
             this.chkIsCaseSensitive.TabIndex = 0;
             this.chkIsCaseSensitive.Text = "Case sensitive";
             this.chkIsCaseSensitive.UseVisualStyleBackColor = true;
@@ -451,9 +451,9 @@ namespace FindAndReplace.App
             // chkIsRegEx
             // 
             this.chkIsRegEx.AutoSize = true;
-            this.chkIsRegEx.Location = new System.Drawing.Point(103, 3);
+            this.chkIsRegEx.Location = new System.Drawing.Point(116, 3);
             this.chkIsRegEx.Name = "chkIsRegEx";
-            this.chkIsRegEx.Size = new System.Drawing.Size(138, 17);
+            this.chkIsRegEx.Size = new System.Drawing.Size(162, 19);
             this.chkIsRegEx.TabIndex = 1;
             this.chkIsRegEx.Text = "Use regular expressions";
             this.chkIsRegEx.UseVisualStyleBackColor = true;
@@ -461,9 +461,9 @@ namespace FindAndReplace.App
             // chkKeepModifiedDate
             // 
             this.chkKeepModifiedDate.AutoSize = true;
-            this.chkKeepModifiedDate.Location = new System.Drawing.Point(150, 26);
+            this.chkKeepModifiedDate.Location = new System.Drawing.Point(170, 28);
             this.chkKeepModifiedDate.Name = "chkKeepModifiedDate";
-            this.chkKeepModifiedDate.Size = new System.Drawing.Size(120, 17);
+            this.chkKeepModifiedDate.Size = new System.Drawing.Size(138, 19);
             this.chkKeepModifiedDate.TabIndex = 3;
             this.chkKeepModifiedDate.Text = "Keep Modified Date";
             this.chkKeepModifiedDate.UseVisualStyleBackColor = true;
@@ -471,9 +471,9 @@ namespace FindAndReplace.App
             // chkUseEscapeChars
             // 
             this.chkUseEscapeChars.AutoSize = true;
-            this.chkUseEscapeChars.Location = new System.Drawing.Point(3, 72);
+            this.chkUseEscapeChars.Location = new System.Drawing.Point(3, 78);
             this.chkUseEscapeChars.Name = "chkUseEscapeChars";
-            this.chkUseEscapeChars.Size = new System.Drawing.Size(112, 17);
+            this.chkUseEscapeChars.Size = new System.Drawing.Size(127, 19);
             this.chkUseEscapeChars.TabIndex = 6;
             this.chkUseEscapeChars.Text = "Use escape chars";
             this.chkUseEscapeChars.UseVisualStyleBackColor = true;
@@ -481,9 +481,9 @@ namespace FindAndReplace.App
             // lblEncoding
             // 
             this.lblEncoding.AutoSize = true;
-            this.lblEncoding.Location = new System.Drawing.Point(121, 69);
+            this.lblEncoding.Location = new System.Drawing.Point(136, 75);
             this.lblEncoding.Name = "lblEncoding";
-            this.lblEncoding.Size = new System.Drawing.Size(55, 13);
+            this.lblEncoding.Size = new System.Drawing.Size(62, 15);
             this.lblEncoding.TabIndex = 7;
             this.lblEncoding.Text = "Encoding:";
             // 
@@ -491,7 +491,7 @@ namespace FindAndReplace.App
             // 
             this.cmbEncoding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEncoding.FormattingEnabled = true;
-            this.cmbEncoding.Location = new System.Drawing.Point(182, 72);
+            this.cmbEncoding.Location = new System.Drawing.Point(204, 78);
             this.cmbEncoding.Name = "cmbEncoding";
             this.cmbEncoding.Size = new System.Drawing.Size(121, 21);
             this.cmbEncoding.TabIndex = 8;
@@ -501,7 +501,7 @@ namespace FindAndReplace.App
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.Size = new System.Drawing.Size(34, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Find:";
             // 
@@ -534,7 +534,7 @@ namespace FindAndReplace.App
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(14, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 13);
+            this.label3.Size = new System.Drawing.Size(87, 15);
             this.label3.TabIndex = 1;
             this.label3.Text = "Exclude Mask:";
             // 
@@ -558,7 +558,7 @@ namespace FindAndReplace.App
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(11, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(63, 15);
             this.label5.TabIndex = 1;
             this.label5.Text = "File Mask:";
             // 
@@ -611,7 +611,7 @@ namespace FindAndReplace.App
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(9, 132);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.Size = new System.Drawing.Size(53, 15);
             this.label9.TabIndex = 58;
             this.label9.Text = "Preview:";
             // 
@@ -620,7 +620,7 @@ namespace FindAndReplace.App
             this.lblResults.AutoSize = true;
             this.lblResults.Location = new System.Drawing.Point(9, 4);
             this.lblResults.Name = "lblResults";
-            this.lblResults.Size = new System.Drawing.Size(45, 13);
+            this.lblResults.Size = new System.Drawing.Size(51, 15);
             this.lblResults.TabIndex = 52;
             this.lblResults.Text = "Results:";
             // 
@@ -653,6 +653,7 @@ namespace FindAndReplace.App
             this.gvResults.Name = "gvResults";
             this.gvResults.ReadOnly = true;
             this.gvResults.RowHeadersVisible = false;
+            this.gvResults.RowHeadersWidth = 51;
             this.gvResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gvResults.Size = new System.Drawing.Size(789, 81);
             this.gvResults.TabIndex = 51;
@@ -679,7 +680,7 @@ namespace FindAndReplace.App
             this.lblStatus.AutoSize = true;
             this.lblStatus.Location = new System.Drawing.Point(83, 88);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(16, 13);
+            this.lblStatus.Size = new System.Drawing.Size(16, 15);
             this.lblStatus.TabIndex = 21;
             this.lblStatus.Text = "...";
             // 
@@ -722,7 +723,7 @@ namespace FindAndReplace.App
             this.lblCommandLine.AutoSize = true;
             this.lblCommandLine.Location = new System.Drawing.Point(14, 6);
             this.lblCommandLine.Name = "lblCommandLine";
-            this.lblCommandLine.Size = new System.Drawing.Size(57, 13);
+            this.lblCommandLine.Size = new System.Drawing.Size(68, 15);
             this.lblCommandLine.TabIndex = 20;
             this.lblCommandLine.Text = "Command:";
             // 
@@ -743,7 +744,7 @@ namespace FindAndReplace.App
             this.txtNoMatches.AutoSize = true;
             this.txtNoMatches.Location = new System.Drawing.Point(3, 5);
             this.txtNoMatches.Name = "txtNoMatches";
-            this.txtNoMatches.Size = new System.Drawing.Size(124, 13);
+            this.txtNoMatches.Size = new System.Drawing.Size(142, 15);
             this.txtNoMatches.TabIndex = 49;
             this.txtNoMatches.Text = " No matching files found.";
             this.txtNoMatches.Visible = false;
