@@ -38,7 +38,7 @@ namespace FindAndReplace
             {
                 foreach (var path in filesInDirectory.ToList())
                 {
-                    foreach (var exclude in excludeDir.Split(','))
+                    foreach (var exclude in excludeDir.Split(';'))
                     {
                         if (path.LastIndexOf('\\') != -1)
                         {
@@ -66,7 +66,7 @@ namespace FindAndReplace
             if (!String.IsNullOrEmpty(excludeMask))
             {
                 var tempFilesInDirectory = new List<string>();
-                List<string> excludeFileMasks = excludeMask.Split(',').ToList();
+                List<string> excludeFileMasks = excludeMask.Split(';').ToList();
                 excludeFileMasks = excludeFileMasks.Select(fm => WildcardToRegex(fm.Trim())).ToList();
 
 

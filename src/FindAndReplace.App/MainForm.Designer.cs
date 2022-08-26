@@ -238,10 +238,10 @@ namespace FindAndReplace.App
             this.txtExcludeDir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExcludeDir.Location = new System.Drawing.Point(397, 48);
+            this.txtExcludeDir.Location = new System.Drawing.Point(448, 48);
             this.txtExcludeDir.MinimumSize = new System.Drawing.Size(50, 20);
             this.txtExcludeDir.Name = "txtExcludeDir";
-            this.txtExcludeDir.Size = new System.Drawing.Size(440, 20);
+            this.txtExcludeDir.Size = new System.Drawing.Size(389, 20);
             this.txtExcludeDir.TabIndex = 2;
             // 
             // label6
@@ -250,11 +250,11 @@ namespace FindAndReplace.App
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(327, 51);
+            this.label6.Location = new System.Drawing.Point(251, 50);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(186, 13);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Exclude Dir:";
+            this.label6.Text = "Exclude Directories (Semi-Colon Split):";
             // 
             // chkIncludeSubDirectories
             // 
@@ -519,9 +519,9 @@ namespace FindAndReplace.App
             this.txtExcludeFileMask.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExcludeFileMask.Location = new System.Drawing.Point(97, 7);
+            this.txtExcludeFileMask.Location = new System.Drawing.Point(103, 7);
             this.txtExcludeFileMask.Name = "txtExcludeFileMask";
-            this.txtExcludeFileMask.Size = new System.Drawing.Size(190, 20);
+            this.txtExcludeFileMask.Size = new System.Drawing.Size(184, 20);
             this.txtExcludeFileMask.TabIndex = 1;
             this.txtExcludeFileMask.Text = "*.dll, *.exe";
             // 
