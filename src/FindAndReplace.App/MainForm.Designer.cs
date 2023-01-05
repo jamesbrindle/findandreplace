@@ -409,8 +409,7 @@ namespace FindAndReplace.App
             // 
             // btnFindOnly
             // 
-            this.btnFindOnly.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFindOnly.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFindOnly.Location = new System.Drawing.Point(3, 3);
             this.btnFindOnly.Name = "btnFindOnly";
             this.btnFindOnly.Size = new System.Drawing.Size(85, 25);
