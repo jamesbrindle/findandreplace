@@ -2,6 +2,8 @@
 
 Modied only slightly, for better handing of different screen DPIs.
 
+The rest of the README.md is from the original project.
+
 
 ## Library Powered By
 
