@@ -1,3 +1,8 @@
+### Forked From: https://github.com/zzzprojects/findandreplace
+
+Modied only slightly, for better handing of different screen DPIs.
+
+
 ## Library Powered By
 
 This library is powered by [Entity Framework Extensions](https://entityframework-extensions.net/?z=github&y=entityframework-plus)
